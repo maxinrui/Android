@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:Hello="http://schemas.android.com/apk/res-auto" >
+
+    <!-- Search , should appear as action button -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/abc_btn_check_material"
+          android:title="@string/action_search"
+          Hello:showAsAction="ifRoom" />
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          Hello:showAsAction="never" />
+</menu><!-- From: file:/Users/xma/AndroidStudioProjects/Hello/app/src/main/res/menu/main_activity_actions.xml -->
