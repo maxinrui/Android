@@ -11,6 +11,30 @@ public class Page {
     private int mImageId;
     private Choice mChoice1;
     private Choice mChoice2;
+    private  boolean mIsFinal = false;
+
+    public Page (int imageId, String text, Choice choice1, Choice choice2) {
+        this.mText = text;
+        this.mImageId = imageId;
+        this.mChoice1 = choice1;
+        this.mChoice2 = choice2;
+    }
+
+    public Page (int mImageId, String mText) {
+        this.mImageId = mImageId;
+        this.mText = mText;
+        this.mChoice1 = null;
+        this.mChoice2 = null;
+        this.mIsFinal = true;
+    }
+
+    public boolean getIsFinal () {
+        return mIsFinal;
+    }
+
+    public void setIsFinal(boolean value) {
+        this.mIsFinal = value;
+    }
 
     public String getText() {
         return mText;
@@ -43,4 +67,5 @@ public class Page {
     public void setChoice2(Choice mChoice2) {
         this.mChoice2 = mChoice2;
     }
+
 }
